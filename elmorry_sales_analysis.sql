@@ -33,3 +33,10 @@ ON Store_Sales.Store_ID = Store_Locations.StoreId
 JOIN Management 
 ON Store_Locations.State = Management.State
 GROUP BY Region;
+
+-- Q4a: Number of transactions per month for South Carolina stores
+SELECT YEAR(Transaction_Date), MONTH(Transaction_Date), COUNT(*)
+FROM Store_Sales
+WHERE Store_ID IN (852, 853)
+GROUP BY YEAR(Transaction_Date), MONTH(Transaction_Date)
+ORDER BY YEAR(Transaction_Date), MONTH(Transaction_Date);
