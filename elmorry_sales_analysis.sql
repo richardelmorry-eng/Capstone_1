@@ -50,3 +50,12 @@ JOIN Inventory_Categories
 ON Products.Categoryid = Inventory_Categories.Categoryid
 WHERE Store_ID IN (852, 853)
 GROUP BY Category;
+
+-- Q5: Ranking of South Carolina stores by total in-store revenue
+SELECT StoreLocation, SUM(Sale_Amount)
+FROM Store_Sales
+JOIN Store_Locations
+ON Store_Sales.Store_ID = Store_Locations.StoreId
+WHERE Store_ID IN (852, 853)
+GROUP BY StoreLocation
+ORDER BY SUM(Sale_Amount) DESC;
