@@ -15,3 +15,10 @@ WHERE State = 'South Carolina';
 SELECT SUM(Sale_Amount), MIN(Transaction_Date), MAX(Transaction_Date)
 FROM Store_Sales
 WHERE Store_ID IN (852, 853);
+
+--  Q2: Revenue by year and month for South Carolina stores
+SELECT YEAR(Transaction_Date), MONTH(Transaction_Date), SUM(Sale_Amount)
+FROM Store_Sales
+WHERE Store_ID IN (852, 853)
+GROUP BY YEAR(Transaction_Date), MONTH(Transaction_Date)
+ORDER BY YEAR(Transaction_Date), MONTH(Transaction_Date); 
