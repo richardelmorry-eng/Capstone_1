@@ -71,3 +71,5 @@ I exported the monthly revenue query to CSV, opened it in Excel, and built a Piv
 ## Recorded Video Presentation
 
 VIDEO LINK GOES HERE
+
+[Watch my recorded capstone presentation on Google Drive](https://drive.google.com/file/d/1q21jAlk3-xMPVTpFMzVFJg1t_fTkIqaD/view?usp=sharing) 
