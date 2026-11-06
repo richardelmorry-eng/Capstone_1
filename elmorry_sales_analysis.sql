@@ -40,3 +40,13 @@ FROM Store_Sales
 WHERE Store_ID IN (852, 853)
 GROUP BY YEAR(Transaction_Date), MONTH(Transaction_Date)
 ORDER BY YEAR(Transaction_Date), MONTH(Transaction_Date);
+
+-- Q4b: Average transaction amount by product category for South Carolina stores
+SELECT Category, AVG(Sale_Amount) 
+FROM Store_Sales
+JOIN Products
+ON Store_Sales.Prod_Num = Products.ProdNum
+JOIN Inventory_Categories
+ON Products.Categoryid = Inventory_Categories.Categoryid
+WHERE Store_ID IN (852, 853)
+GROUP BY Category;
