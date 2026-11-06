@@ -59,3 +59,9 @@ ON Store_Sales.Store_ID = Store_Locations.StoreId
 WHERE Store_ID IN (852, 853)
 GROUP BY StoreLocation
 ORDER BY SUM(Sale_Amount) DESC;
+
+-- Q6: Recommendation for next quarter
+-- I recommend focusing on Technology & Accessories because it made about 73% of South Carolina's revenue (about $472,000 of $648,812).
+-- Revenue grew in 2025 (about $248,500 vs. $147,500 in 2024), so demand is rising.
+-- Next quarter the team should run promotions on Technology & Accessories at Charleston to close the gap with Greenville.
+
