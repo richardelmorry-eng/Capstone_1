@@ -22,3 +22,14 @@ FROM Store_Sales
 WHERE Store_ID IN (852, 853)
 GROUP BY YEAR(Transaction_Date), MONTH(Transaction_Date)
 ORDER BY YEAR(Transaction_Date), MONTH(Transaction_Date); 
+
+SELECT * FROM Management;
+
+-- Q3: Revenue by region. South Carolina is 648,812.56 of the South region's total
+SELECT Region, SUM(Sale_Amount)
+FROM Store_Sales
+JOIN Store_Locations
+ON Store_Sales.Store_ID = Store_Locations.StoreId
+JOIN Management 
+ON Store_Locations.State = Management.State
+GROUP BY Region;
