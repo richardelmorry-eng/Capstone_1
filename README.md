@@ -63,13 +63,14 @@ I exported the monthly revenue query to CSV, opened it in Excel, and built a Piv
 
 ## Project Files
 
-- `elmorry_sales_analysis.sql`: SQL queries for all six questions, plus the recommendation
-- `elmorry_territory_data.csv`: monthly revenue results exported from MySQL
-- `elmorry_territory_chart.xlsx`: Excel PivotTable and PivotChart
-- `README.md`: project overview, findings, and video link
+- [`elmorry_sales_analysis.sql`](elmorry_sales_analysis.sql) — SQL queries for all six questions, plus the recommendation
+- [`elmorry_territory_data.csv`](elmorry_territory_data.csv) — Monthly revenue results exported from MySQL
+- [`elmorry_territory_chart.xlsx`](elmorry_territory_chart.xlsx) — Excel PivotTable and PivotChart
+- [`elmorry_capstone_presentation.pptx`](elmorry_capstone_presentation.pptx) — Capstone presentation slides
+- `README.md` — Project overview, findings, recommendation, and video link
 
 ## Recorded Video Presentation
 
-VIDEO LINK GOES HERE
+[Watch my recorded capstone presentation on Google Drive](https://drive.google.com/file/d/1q21jAlk3-xMPVTpFMzVFJg1t_fTkIqaD/view?usp=sharing)
 
-[Watch my recorded capstone presentation on Google Drive](https://drive.google.com/file/d/1q21jAlk3-xMPVTpFMzVFJg1t_fTkIqaD/view?usp=sharing) 
+The recorded presentation explains the SQL queries, the Excel PivotChart, the main findings, and my recommendation for South Carolina's next quarter.
