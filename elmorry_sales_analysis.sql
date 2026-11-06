@@ -55,6 +55,16 @@ WHERE Store_ID IN (852, 853)
 GROUP BY StoreLocation
 ORDER BY SUM(Sale_Amount) DESC;
 
+-- Q6 support: Total revenue by product category for South Carolina stores
+SELECT Category, SUM(Sale_Amount) 
+FROM Store_Sales
+JOIN Products
+ON Store_Sales.Prod_Num = Products.ProdNum
+JOIN Inventory_Categories
+ON Products.Categoryid = Inventory_Categories.Categoryid
+WHERE Store_ID IN (852, 853)
+GROUP BY Category;
+
 -- Q6: Recommendation for next quarter
 -- I recommend focusing on Technology & Accessories because it made about 73% of South Carolina's revenue (about $472,000 of $648,812).
 -- Revenue grew in 2025 (about $248,500 vs. $147,500 in 2024), so demand is rising.
